@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CraveCooks - Delicious Recipes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -44,21 +45,34 @@
                 <img src="recipe1.jpg" alt="Recipe 1">
                 <h3>Spaghetti Carbonara</h3>
                 <p>A classic Italian pasta dish with a creamy egg-based sauce.</p>
-                <a href="#">View Recipe</a>
+                <a href="recipe1.html" class="btn-secondary">View Recipe</a>
+                <button class="btn-like" onclick="likeRecipe('Spaghetti Carbonara')">Like Recipe</button>
             </div>
             <div class="recipe-card">
                 <img src="recipe2.jpg" alt="Recipe 2">
                 <h3>Chicken Alfredo</h3>
                 <p>Rich and creamy pasta with tender chicken and a Parmesan sauce.</p>
-                <a href="#">View Recipe</a>
+                <a href="recipe2.html" class="btn-secondary">View Recipe</a>
+                <button class="btn-like" onclick="likeRecipe('Chicken Alfredo')">Like Recipe</button>
             </div>
             <div class="recipe-card">
                 <img src="recipe3.jpg" alt="Recipe 3">
                 <h3>Vegetarian Tacos</h3>
                 <p>Delicious and healthy veggie-packed tacos with fresh salsa.</p>
-                <a href="#">View Recipe</a>
+                <a href="recipe3.html" class="btn-secondary">View Recipe</a>
+                <button class="btn-like" onclick="likeRecipe('Vegetarian Tacos')">Like Recipe</button>
             </div>
         </div>
+    </section>
+
+    <!-- Like Count Section -->
+    <section id="like-count" class="container">
+        <h3>You have liked <span id="like-count-text">0</span> recipes!</h3>
+    </section>
+
+    <!-- Theme Toggle Button -->
+    <section class="theme-toggle">
+        <button onclick="toggleTheme()" class="btn-primary">Toggle Dark/Light Theme</button>
     </section>
 
     <!-- Footer Section -->
